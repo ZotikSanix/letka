@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#include "function.h"
+#include "function 2.h"
 
 //-----------------------------------------------------------------------------------------------------начало main
 int main()

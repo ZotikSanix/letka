@@ -2,7 +2,7 @@
 #include <math.h>
 #include <stdbool.h>
 
-#include "function 2.h"
+#include "function.h"
 
 void out_back(int nRoots, double x1, double x2){  // функция вывода
 

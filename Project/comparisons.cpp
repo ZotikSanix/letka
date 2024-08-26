@@ -2,7 +2,7 @@
 #include <math.h>
 #include <stdbool.h>
 
-#include "function 2.h"
+#include "function.h"
 
 int sravn(double srav){   // функция сравнения с нулём
 
@@ -24,3 +24,4 @@ int srav_chis(double chis1, double chis2){   // cравнение чисел вида double()
         return false;
     }
 }
+
