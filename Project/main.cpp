@@ -9,11 +9,11 @@ int main()
     double a = 0, b = 0, c = 0;  // объевление корней и коэффициентов
     double x1 = 0, x2 = 0;
     int klass = 0;               // количество пройденных тестов
-    int tip = 0;
+    int var_programm = 0;
 
     printf("Enter the action you want: 1 - launching the program, 2 - test mode\n");  // Запрос на запуск программы
 
-    int check_vvod = scanf("%d", &tip);               // определитель сколько символов считалось
+    int check_vvod = scanf("%d", & var_programm);               // определитель сколько символов считалось
 
     while (check_vvod != 1) {                         // проверка ввода запроса
             int symb = getchar();
@@ -22,10 +22,10 @@ int main()
 
             }
             printf("Enter the action you want: 1 - launching the program, 2 - test mode\n");
-            check_vvod = scanf("%d", & tip);
+            check_vvod = scanf("%d", & var_programm);
         }
 
-    if (tip == 1){                                    // если запускаем программу
+    if (var_programm == 1){                                    // если запускаем программу
 
         printf("Enter a, b, c: \n");
 
@@ -44,7 +44,7 @@ int main()
 
         out_back(nRoots, x1, x2);                    // вывод корней
     }
-    if (tip == 2)                                    // если запускаем тесты
+    if (var_programm == 2)                                    // если запускаем тесты
         AllTests();
 
 
