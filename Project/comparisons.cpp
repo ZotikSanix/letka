@@ -15,9 +15,9 @@ int sravn(double srav){   // функция сравнения с нулём
 
 }
 
-int srav_chis(double chis1, double chis2){   // cравнение чисел вида double()
+int srav_chis(double num1, double num2){   // cравнение чисел вида double()
 
-    if  (fabs(chis1 - chis2) < EPSILON){
+    if  (fabs(num1 - num2) < EPSILON){
         return true;
     }
     else{

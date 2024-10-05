@@ -8,18 +8,18 @@
 #define EPSILON    0.0001
 #define NO         0
 
-#ifndef PEREMEN
-#define PEREMEN
+//#ifndef PEREMEN
+//#define PEREMEN
 struct Peremen{  //-----------------------------------структура
     double a, b, c;
     double x1expect, x2expect;
     int nRootsexpect;
 };
-#endif
+//#endif
 
 void AllTests();// записанные тесты
 
-int srav_chis(double chis1, double chis2); // cравнение чисел вида double()
+int srav_chis(double num1, double num2); // cравнение чисел вида double()
 
 int  Check_eqation(struct Peremen *data);// проверка уравнений
 

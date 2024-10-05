@@ -8,22 +8,20 @@ int main()
 {
     double a = 0, b = 0, c = 0;  // объевление корней и коэффициентов
     double x1 = 0, x2 = 0;
-    int klass = 0;               // количество пройденных тестов
     int var_programm = 0;
 
     printf("Enter the action you want: 1 - launching the program, 2 - test mode\n");  // Запрос на запуск программы
 
-    int check_vvod = scanf("%d", & var_programm);               // определитель сколько символов считалось
+    int check_vvod = scanf("%d", &var_programm);               // определитель сколько символов считалось
 
     while (check_vvod != 1) {                         // проверка ввода запроса
-            int symb = getchar();
-            while (symb != '\n' && symb != EOF) {
+        int symb = getchar();
+        while (symb != '\n' && symb != EOF) {
             symb = getchar();
-
-            }
-            printf("Enter the action you want: 1 - launching the program, 2 - test mode\n");
-            check_vvod = scanf("%d", & var_programm);
         }
+        printf("Enter the action you want: 1 - launching the program, 2 - test mode\n");
+        check_vvod = scanf("%d", & var_programm);
+    }
 
     if (var_programm == 1){                                    // если запускаем программу
 
@@ -34,8 +32,7 @@ int main()
         while (check !=3) {                           // проверка ввода 2
             int symb = getchar();
             while (symb != '\n' && symb != EOF) {
-            symb = getchar();
-
+                symb = getchar();
             }
             printf("Enter a, b, c: \n");
             check = scanf("%lg %lg %lg", &a, &b, &c);
@@ -46,8 +43,6 @@ int main()
     }
     if (var_programm == 2)                                    // если запускаем тесты
         AllTests();
-
-
 
     return 0;
 }
